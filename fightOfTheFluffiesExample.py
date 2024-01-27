@@ -8,30 +8,62 @@ pygame.display.set_caption("Fight of the Fluffies")
 win = pygame.display.set_mode((2560, 1440))
 
 #Loading Beebo animation walking frames
-walk_right = [pygame.image.load("R1.png"), pygame.image.load("R2.png"), pygame.image.load("R3.png"), pygame.image.load("R4.png"), pygame.image.load("R5.png"), pygame.image.load("R6.png"), pygame.image.load("R7.png"), pygame.image.load("R8.png"), pygame.image.load("R9.png")]
-walk_left = [pygame.image.load("L1.png"), pygame.image.load("L2.png"), pygame.image.load("L3.png"), pygame.image.load("L4.png"), pygame.image.load("L5.png"), pygame.image.load("L6.png"), pygame.image.load("L7.png"), pygame.image.load("L8.png"), pygame.image.load("L9.png")]
+walk_right = [pygame.image.load("Images//R1.png"),
+              pygame.image.load("Images//R2.png"),
+              pygame.image.load("Images//R3.png"),
+              pygame.image.load("Images//R4.png"),
+              pygame.image.load("Images//R5.png"),
+              pygame.image.load("Images//R6.png"),
+              pygame.image.load("Images//R7.png"),
+              pygame.image.load("Images//R8.png"),
+              pygame.image.load("Images//R9.png")]
+walk_left = [pygame.image.load("Images//L1.png"),
+             pygame.image.load("Images//L2.png"),
+             pygame.image.load("Images//L3.png"),
+             pygame.image.load("Images//L4.png"),
+             pygame.image.load("Images//L5.png"),
+             pygame.image.load("Images//L6.png"),
+             pygame.image.load("Images//L7.png"),
+             pygame.image.load("Images//L8.png"),
+             pygame.image.load("Images//L9.png")]
 
 #Loading Gleek animation walking frames
-g_walk_right = [pygame.image.load("GR1.png"), pygame.image.load("GR2.png"), pygame.image.load("GR3.png"), pygame.image.load("GR4.png"), pygame.image.load("GR5.png"), pygame.image.load("GR6.png"), pygame.image.load("GR7.png"), pygame.image.load("GR8.png"), pygame.image.load("GR9.png")]
-g_walk_left = [pygame.image.load("GL1.png"), pygame.image.load("GL2.png"), pygame.image.load("GL3.png"), pygame.image.load("GL4.png"), pygame.image.load("GL5.png"), pygame.image.load("GL6.png"), pygame.image.load("GL7.png"), pygame.image.load("GL8.png"), pygame.image.load("GL9.png")]
+g_walk_right = [pygame.image.load("Images//GR1.png"),
+                pygame.image.load("Images//GR2.png"),
+                pygame.image.load("Images//GR3.png"),
+                pygame.image.load("Images//GR4.png"),
+                pygame.image.load("Images//GR5.png"),
+                pygame.image.load("Images//GR6.png"),
+                pygame.image.load("Images//GR7.png"),
+                pygame.image.load("Images//GR8.png"),
+                pygame.image.load("Images//GR9.png")]
+g_walk_left = [pygame.image.load("Images//GL1.png"),
+               pygame.image.load("Images//GL2.png"),
+               pygame.image.load("Images//GL3.png"),
+               pygame.image.load("Images//GL4.png"),
+               pygame.image.load("Images//GL5.png"),
+               pygame.image.load("Images//GL6.png"),
+               pygame.image.load("Images//GL7.png"),
+               pygame.image.load("Images//GL8.png"),
+               pygame.image.load("Images//GL9.png")]
 
 #Loading projectile images
-laser_img = pygame.image.load("Laser.png")
-banana_img = pygame.image.load("Banana.png")
-banana_peel_img = pygame.image.load("BananaPeel.png")
+laser_img = pygame.image.load("Images//Laser.png")
+banana_img = pygame.image.load("Images//Banana.png")
+banana_peel_img = pygame.image.load("Images//BananaPeel.png")
 
 #Loading City Background
-bg = pygame.image.load("City background.jpg")
+bg = pygame.image.load("Images//City background.jpg")
 
 #Making clock for frame rate
 clock = pygame.time.Clock()
 
 #Loading sound effects
-bullet_sound = pygame.mixer.Sound("bullet.wav")
-hit_sound = pygame.mixer.Sound("hit.wav")
+bullet_sound = pygame.mixer.Sound("SFX//bullet.wav")
+hit_sound = pygame.mixer.Sound("SFX//hit.wav")
 
 #Loading music
-music = pygame.mixer.music.load("Ode-to-Joy.wav")
+music = pygame.mixer.music.load("SFX//Ode-to-Joy.wav")
 #Playing the music
 pygame.mixer.music.play(-1)
 
