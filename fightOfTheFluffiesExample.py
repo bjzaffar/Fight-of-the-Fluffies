@@ -1,11 +1,14 @@
 import pygame
+from pygame.locals import *
 pygame.init()
 
 #Setting name of the game
 pygame.display.set_caption("Fight of the Fluffies")
 
-#Setting window size
-win = pygame.display.set_mode((2560, 1440))
+#Getting display info
+screen_info = pygame.display.Info()
+window_width, window_height = screen_info.current_w, screen_info.current_h
+win = pygame.display.set_mode((window_width, window_height), RESIZABLE)
 
 #Loading Beebo animation walking frames
 walk_right = [pygame.image.load("Images//R1.png"),
